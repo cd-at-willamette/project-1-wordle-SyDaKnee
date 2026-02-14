@@ -42,7 +42,7 @@ def wordle():
                 if current_row + 1 < N_ROWS: # If the guess is incorrect, move to the next row to guess again, -> 
                     gw.set_current_row(current_row + 1) # move to the next row to guess again.
                 else:
-                    gw.show_message(f"You lost, the asnwer is {answer_str}.") # Unless if the next row is the last row: then display a message that states the game has been lost.
+                    gw.show_message(f"You lost, the answer is {answer_str}.") # Unless if the next row is the last row: then display a message that states the game has been lost.
         else:
             gw.show_message("Try again. Word not in list.") # If the word is not valid, display a message that says to try a different guess.
  
